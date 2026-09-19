@@ -115,6 +115,7 @@ function ResumeModal({ onClose }: { onClose: () => void }) {
       <div className="resume-modal glass-card" role="dialog" aria-modal="true" aria-labelledby="resume-title" onClick={(event) => event.stopPropagation()}>
         <div className="resume-actions">
           <button type="button" className="modal-close" onClick={onClose} aria-label="Close resume" data-testid="button-close-resume"><X size={18} /></button>
+          <a className="resume-pdf-button" href="./Zyrine-Angelica-Lopez-Resume.pdf" target="_blank" rel="noreferrer" data-testid="link-full-resume-pdf"><FileText size={15} /> Full PDF <ExternalLink size={13} /></a>
           <button type="button" className="resume-print-button" onClick={() => window.print()} data-testid="button-print-resume"><FileText size={15} /> Print / Save PDF</button>
         </div>
         <div className="resume-sheet">
