@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Zyrine Portfolio"
+description = "A responsive personal portfolio for Zyrine Angelica G. Lopez, an aspiring web designer, with playful pastel visuals, project highlights, skills, and contact links."
+version = "1.0.0"
+id = "artifacts/zyrine-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21418
+
+[services.development]
+run = "pnpm --filter @workspace/zyrine-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/zyrine-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/zyrine-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21418"
+BASE_PATH = "/"

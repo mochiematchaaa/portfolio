@@ -1,0 +1,65 @@
+reate an eye-catching, modern personal portfolio website for Zyrine Angelica G. Lopez (BSIT Student & Web Designer) using HTML5, CSS3, and JavaScript.
+
+Core Concept & Vibe:
+
+App-Like Screen Switching Navigation: Instead of a simple scroll, the navigation bar acts like a tabbed app interface. Clicking links (Home, About, My Works, Contact) smoothly transitions between dedicated fullscreen views/pages using scale/fade transitions.
+
+Color Scheme: Soft pastel pink (#FFC0CB, #FFB6C1) combined with light aesthetic blue (#AEC6CF, #B0E0E6), white frosted glass card effects, and high-contrast pastel accents.
+
+Visuals: Use high-quality placeholder images (from Unsplash/Pexels or SVG placeholders) for all projects, profile pictures, and backgrounds.
+
+Screen Layouts & Designs:
+Home Screen (Interactive & High Impact):
+
+Hero Section: Auto-typing text animation switching between "BSIT Student", "Web Designer", and "Creative UI/UX Developer".
+
+Visual Elements: Cute floating 3D-style badges, pastel glow circles, sparkles, and a rounded profile photo frame with a rotating/pulsing pastel neon border.
+
+Social Quick Links: Animated pill buttons for GitHub, LinkedIn, and Email.
+
+CTA Button: Bouncy, glowing button ("Explore My Work ✨") that switches directly to the Works screen.
+
+My Works Screen (Instagram/Social Grid Style):
+
+Layout: Modern, sleek grid inspired by Instagram posts/reels.
+
+Header: An Instagram-like profile banner (Avatar, Handle: @zyrine.designs, Bio: "BSIT Student • Web Designer • Crafting cute digital experiences 🌸").
+
+Filter Bar: Cute tab buttons (All Posts, 📷 Photo Booth, 🌐 Landing Pages, ✨ Other Works).
+
+Work Cards (IG-Style Feed/Grid):
+
+Each item looks like a sleek post card with an image preview header, project title, description, and hashtag/tech tags (e.g., #HTML5 #CSS3 #WebDesign).
+
+Interactive "Heart/Like" button with a cute heart animation when clicked.
+
+Hovering over a post triggers a smooth overlay with "View Live Demo 🔗" and "GitHub Repo 💻" links.
+
+Clicking a card opens a modal pop-up with full project details and screenshot previews.
+
+About Screen:
+
+Clean two-column layout with a soft frosted glass background.
+
+Skill badges (HTML, CSS, JS, Figma, UI/UX) styled with interactive bouncy hover effects.
+
+Contact Screen (Gmail / Webmail Style Interface):
+
+Styled to look like a modern, cute Gmail / Inbox Compose window!
+
+Header: "New Message - To: Zyrine Angelica 💌".
+
+Fields: Input fields for From (Your Email), Subject, and a rich Message text area.
+
+Send Button: Cute pink/blue submit button with a paper airplane icon. On submit, trigger a cute pop-up success toast: "Message sent! Thank you for reaching out 💕".
+
+Direct quick links to Email, LinkedIn, and GitHub styled like inbox bookmarks.
+
+Animations, Transitions & Effects:
+Screen Transitions: Page-switching animation where inactive screens slide out smoothly (transform: scale(0.95), opacity: 0) and the active screen fades in.
+
+Floating Keyframes: Gentle floating animation (@keyframes float) on decorative elements (sparkles ✦, hearts ♡, stars ★).
+
+Glow & Glassmorphism: Semi-transparent frosted cards (backdrop-filter: blur(12px)) with glowing borders on hover.
+
+Custom Cursor or Hover Sparks: Subtle micro-interact

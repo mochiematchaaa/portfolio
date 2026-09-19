@@ -1,0 +1,55 @@
+"Enhance the existing pastel pink & blue portfolio website for Zyrine Angelica G. Lopez (BSIT Student & Web Designer) by adding interactive JavaScript features and dynamic CSS animations.
+
+Interactive Features to Implement with Vanilla JavaScript:
+
+Dynamic Navigation & Active Link Highlight:
+
+Add a sticky navbar with an active indicator that highlights the current section as the user scrolls (IntersectionObserver API or scroll listener).
+
+Mobile navigation toggle (cute hamburger menu that animates into a cross icon with a smooth slide-down menu on mobile screens).
+
+Interactive Works/Projects Filter:
+
+Add filter buttons at the top of the My Works section: All, Photo Booth, Landing Pages, and Other Works.
+
+Clicking a filter button smoothly filters the project cards with a fade/scale animation using JavaScript.
+
+Interactive Project Preview Modal (Pop-up):
+
+Clicking on any project card (e.g., the Photo Booth or Landing Page) opens a cute pop-up modal showcasing full details, screenshots, live demo link, and GitHub link.
+
+Include a close button (×) and close-on-backdrop-click functionality.
+
+Cute Theme Switcher (Day/Night Mode Toggle):
+
+Add a cute toggle button in the navbar (e.g., 🌸 Pastel Mode vs 🌙 Dark Pastel Mode).
+
+Use JavaScript to toggle a .dark-theme CSS class on the body, persisting the user's theme preference in localStorage.
+
+Typing Effect in Hero Section:
+
+Implement an auto-typing text animation in the hero header cycling through: "BSIT Student", "UI/UX Enthusiast", "Web Designer".
+
+Scroll-Triggered Reveal Animations:
+
+Use JavaScript (IntersectionObserver) to add a fade-in and slide-up transition (opacity: 0 to opacity: 1, transform: translateY(30px)) to sections and project cards as they scroll into view.
+
+Contact Form Validation & Cute Alert:
+
+Form validation using JS to ensure required fields (Name, Email, Message) are correctly filled.
+
+On submission, prevent page refresh (event.preventDefault()), reset the form, and display a cute pop-up success toast message: "Thank you! Your message has been sent 💕".
+
+Socials & Links to integrate in Header & Footer:
+
+GitHub ([https://github.com](https://github.com))
+
+LinkedIn ([https://linkedin.com](https://linkedin.com))
+
+Email (mailto:zyrine.angelica@example.com)
+
+Technical Output Requirements:
+
+Provide clean, well-commented HTML5, CSS3, and JavaScript (vanilla JS) code (either inline in <script> tags or as a separate JS block).
+
+Keep all animations lightweight and smooth (using requestAnimationFrame or standard CSS transition classes triggered by JS)

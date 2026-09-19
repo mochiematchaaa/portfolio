@@ -1,0 +1,74 @@
+Here is a dedicated prompt specifically focused on turning your **My Works** section into an interactive, Instagram-inspired showcase with support for photos, videos, and categorized navigation:
+
+---
+
+### **Prompt to Copy & Paste:**
+
+> "Create an interactive, modern **'My Works' section** for the personal portfolio of **Zyrine Angelica G. Lopez** (BSIT Student & Web Designer) using HTML5, CSS3, and Vanilla JavaScript.
+> **Core Concept & Theme:**
+> * **Style:** Inspired by **Instagram Feed & Reels Grid**.
+> * **Color Scheme:** Soft pastel pink (`#FFB6C1`, `#FFC0CB`) mixed with light aesthetic blue (`#AEC6CF`, `#B0E0E6`), frosted glass cards (`backdrop-filter: blur(10px)`), and glowing borders.
+> 
+> 
+> ---
+> 
+> 
+> ### **Layout & Key Features:**
+> 
+> 
+> 1. **Instagram-Style Profile Header:**
+> * Profile picture frame with a pulsing pink/blue pastel gradient border.
+> * Handle: `@zyrine.designs ✨`
+> * Bio: "Zyrine Angelica G. Lopez • BSIT Student & Web Designer 🌸 | Crafting cute & functional web experiences."
+> * Stats row: `12 Projects` | `100+ Likes` | `Web Design & UI/UX`.
+> 
+> 
+> 2. **IG Category Tabs (Filters):**
+> * Styled like Instagram grid switching tabs with cute icons:
+> * 📷 **All Posts** (Shows all images & videos)
+> * 🎞️ **Reels & Demos** (Filters to video previews & screen recordings)
+> * 📸 **Photo Booth** (Web apps / Photo booth projects)
+> * 🌐 **Landing Pages** (Website & UI designs)
+> * ✨ **Other Works** (Graphics, Figma prototypes, extra projects)
+> 
+> 
+> * Active tab highlighted with a pastel blue/pink underline and pill badge.
+> 
+> 
+> 3. **Interactive Media Grid (Photos & Videos):**
+> * **Photo Posts:** HTML `<img>` tag placeholders with hover overlays showing project titles, tech tags (e.g., `#HTML #CSS #JS`), and direct action buttons (*Live Demo* | *GitHub*).
+> * **Video / Reels Posts:** HTML `<video>` tags with autoplay on hover (or muted looping previews) and a play button icon indicator in the corner.
+> * **Interactive Heart/Like Button:** Each post features a heart icon ♡ that turns into a solid filled red/pink heart ♥ with a cute pop/scale animation when clicked, incrementing a like counter.
+> 
+> 
+> 4. **Project Preview Pop-up Modal:**
+> * Clicking any photo or video post opens an Instagram-style pop-up modal showing:
+> * **Left Side:** Full-size image slider or HTML video player.
+> * **Right Side:** Project title, detailed description, features list, tech stack badges, and direct links to view the live site or GitHub repository.
+> * Close button (`×`) and smooth backdrop blur.
+> 
+> 
+> 
+> 
+> 
+> 
+> ---
+> 
+> 
+> ### **Animations & Micro-Interactions:**
+> 
+> 
+> * Smooth grid item filtering transitions using JavaScript (cards fade and scale softly when switching categories).
+> * Hover lift effect (`transform: translateY(-6px)`) with a soft glowing pastel shadow.
+> * Bouncy heart pulse keyframe animation for liked posts.
+> 
+> 
+> ### **Technical Requirements:**
+> 
+> 
+> * Clean HTML structure with clear `<video>` and `<img>` placeholders.
+> * Modern CSS Grid and Flexbox layouts.
+> * Vanilla JavaScript logic for tab filtering, heart-click counters, video play-on-hover triggers, and modal opening/closing.
+> * Fully responsive for mobile, tablet, and desktop screens."
+> 
+>
