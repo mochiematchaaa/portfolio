@@ -156,9 +156,9 @@ function ResumeModal({ onClose }: { onClose: () => void }) {
               </div>
               <div className="resume-section">
                 <span className="resume-label">Connect</span>
-                <a href="mailto:zyrineangelica@gmail.com">zyrineangelica@gmail.com</a>
+                <a href="mailto:zyrinezyrine08@gmail.com">zyrinezyrine08@gmail.com</a>
                 <a href="https://github.com/zyrineangelica" target="_blank" rel="noreferrer">github.com/zyrineangelica</a>
-                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">linkedin.com</a>
+                <a href="https://www.linkedin.com/in/zyrine-angelica-lopez-3a0a68436" target="_blank" rel="noreferrer">linkedin.com/in/zyrine-angelica-lopez</a>
               </div>
               <div className="resume-note"><Sparkles size={15} /> always learning, always making</div>
             </div>
@@ -360,8 +360,8 @@ function HomeView({ onNavigate, onOpenResume }: { onNavigate: (view: View) => vo
           <div className="quick-links">
             <span className="quick-label">find me online</span>
             <a href="https://github.com/zyrineangelica" target="_blank" rel="noreferrer" aria-label="Zyrine on GitHub" data-testid="link-github"><Github size={17} /></a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="Zyrine on LinkedIn" data-testid="link-linkedin"><Linkedin size={17} /></a>
-            <a href="mailto:zyrineangelica@gmail.com" aria-label="Email Zyrine" data-testid="link-email"><Mail size={17} /></a>
+            <a href="https://www.linkedin.com/in/zyrine-angelica-lopez-3a0a68436" target="_blank" rel="noreferrer" aria-label="Zyrine on LinkedIn" data-testid="link-linkedin"><Linkedin size={17} /></a>
+            <a href="mailto:zyrinezyrine08@gmail.com" aria-label="Email Zyrine" data-testid="link-email"><Mail size={17} /></a>
             <span className="quick-line" />
           </div>
         </div>
@@ -485,7 +485,7 @@ function ContactView() {
   };
   return (
     <section className="view contact-view" aria-labelledby="contact-title">
-      <div className="contact-intro"><div className="eyebrow"><span className="eyebrow-line" /> 04 / let&apos;s talk</div><h2 id="contact-title">Have a thought?<br /><span>Send it over.</span></h2><p>Whether it&apos;s a tiny idea, a curious question, or a project that needs a little sparkle, my inbox is open.</p><div className="contact-links"><a href="mailto:zyrineangelica@gmail.com" data-testid="link-contact-email"><Mail size={15} /> Email me <ArrowUpRight size={14} /></a><a href="https://www.linkedin.com" target="_blank" rel="noreferrer" data-testid="link-contact-linkedin"><Linkedin size={15} /> LinkedIn <ArrowUpRight size={14} /></a><a href="https://github.com/zyrineangelica" target="_blank" rel="noreferrer" data-testid="link-contact-github"><Github size={15} /> GitHub <ArrowUpRight size={14} /></a></div></div>
+      <div className="contact-intro"><div className="eyebrow"><span className="eyebrow-line" /> 04 / let&apos;s talk</div><h2 id="contact-title">Have a thought?<br /><span>Send it over.</span></h2><p>Whether it&apos;s a tiny idea, a curious question, or a project that needs a little sparkle, my inbox is open.</p><div className="contact-links"><a href="mailto:zyrinezyrine08@gmail.com" data-testid="link-contact-email"><Mail size={15} /> Email me <ArrowUpRight size={14} /></a><a href="https://www.linkedin.com/in/zyrine-angelica-lopez-3a0a68436" target="_blank" rel="noreferrer" data-testid="link-contact-linkedin"><Linkedin size={15} /> LinkedIn <ArrowUpRight size={14} /></a><a href="https://github.com/zyrineangelica" target="_blank" rel="noreferrer" data-testid="link-contact-github"><Github size={15} /> GitHub <ArrowUpRight size={14} /></a></div></div>
       <form className="compose-card glass-card" onSubmit={handleSubmit} noValidate>
         <div className="compose-top"><span><span className="window-dot pink" /><span className="window-dot yellow" /><span className="window-dot blue" /></span><span>New Message</span><button type="button" onClick={() => setForm({ email: '', subject: '', message: '' })} aria-label="Clear message" data-testid="button-clear-message"><X size={15} /></button></div>
         <label>To <span className="recipient">Zyrine Angelica</span></label>
