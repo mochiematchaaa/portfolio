@@ -7,38 +7,15 @@ import { useEffect, useState, type ReactNode } from 'react';
 const profile = {
   name: 'Zyrine Angelica G. Lopez',
   shortName: 'Zyrine Lopez',
-  headline: 'Information Technology · Web Development & Software',
+  headline: 'Web Development · UI/UX Design · Digital Design',
   location: 'Binangonan, Rizal, Philippines',
   email: 'zyrinezyrine08@gmail.com',
   linkedin: 'https://www.linkedin.com/in/zyrine-angelica-lopez-3a0a68436',
   github: 'https://github.com/zyrineangelica',
   resume: './Zyrine-Angelica-Lopez-Resume.pdf',
   summary:
-    'Information Technology professional focused on software and web development: building responsive websites with HTML, CSS and JavaScript, designing user interfaces in Figma, and working with Java, Python and SQL. Detail-oriented, quick to learn, and reliable in managing time and priorities.',
+    'Information Technology professional focused on software and digital work. I build responsive websites with HTML, CSS and JavaScript, design user interfaces in Figma, and create digital graphics and multimedia content. Detail-oriented, quick to learn, and reliable in managing time and priorities.',
 };
-
-const experience = [
-  {
-    role: 'IT Intern',
-    company: 'Modernext IT Solution Corp',
-    place: 'Greenhills, San Juan City',
-    period: 'Feb 2026 – Apr 2026',
-    points: [
-      'Installed and configured operating systems across multiple rental laptops and desktop setups.',
-      'Re-configured system settings on rental laptop inventory to keep units ready for deployment.',
-    ],
-  },
-  {
-    role: 'ICT Intern / Trainee',
-    company: 'Vicente Madrigal National High School',
-    place: 'Binangonan, Rizal',
-    period: 'Mar 2023 – May 2023',
-    points: [
-      'Designed event presentations, certificates and handbooks for school staff using graphic design tools.',
-      'Supported student record management for the school.',
-    ],
-  },
-];
 
 const projects: { title: string; year: string; type: string; description: string; tech: string[]; link?: string }[] = [
   {
@@ -86,12 +63,11 @@ const certifications = [
   { title: 'Digital Finance and Financial Literacy: Bridging Traditional and Modern Economic Knowledge', issuer: '', year: '2026' },
 ];
 
-type Page = 'home' | 'about' | 'experience' | 'projects' | 'skills' | 'contact';
+type Page = 'home' | 'about' | 'projects' | 'skills' | 'contact';
 
 const pages: { id: Page; label: string }[] = [
   { id: 'home', label: 'Home' },
   { id: 'about', label: 'About' },
-  { id: 'experience', label: 'Experience' },
   { id: 'projects', label: 'Projects' },
   { id: 'skills', label: 'Skills' },
   { id: 'contact', label: 'Contact' },
@@ -116,7 +92,7 @@ const CloseIcon = () => <Icon size={22}><path d="M6 6l12 12M18 6 6 18" /></Icon>
 const ArrowIcon = () => <Icon size={16}><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></Icon>;
 const SunIcon = () => <Icon><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></Icon>;
 const MoonIcon = () => <Icon><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" /></Icon>;
-const BriefcaseIcon = () => <Icon size={22}><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" /><path d="M3 13h18" /></Icon>;
+const PenIcon = () => <Icon size={22}><path d="M12 19l7-7 3 3-7 7-3-3Z" /><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5Z" /><path d="M2 2l7.586 7.586" /><circle cx="11" cy="11" r="2" /></Icon>;
 const LayersIcon = () => <Icon size={22}><path d="m12 3 9 5-9 5-9-5 9-5Z" /><path d="m3 13 9 5 9-5" /></Icon>;
 const CodeIcon = () => <Icon size={22}><path d="m8 7-5 5 5 5" /><path d="m16 7 5 5-5 5" /><path d="m14 4-4 16" /></Icon>;
 const LinkedinIcon = () => (
@@ -258,10 +234,10 @@ function NextLink({ to, label }: { to: Page; label: string }) {
 /* ------------------------------------------------------------------ */
 
 function HomePage() {
-  const highlights: { to: Page; title: string; text: string; icon: ReactNode }[] = [
-    { to: 'experience', title: 'Experience', text: 'IT internship in operating system installation and system configuration.', icon: <BriefcaseIcon /> },
-    { to: 'projects', title: 'Projects', text: 'Responsive websites, a mobile UI/UX prototype and documentation.', icon: <LayersIcon /> },
-    { to: 'skills', title: 'Skills', text: 'Programming languages, web development, databases and design tools.', icon: <CodeIcon /> },
+  const highlights: { to: Page; title: string; text: string; link: string; icon: ReactNode }[] = [
+    { to: 'projects', title: 'Web Development', text: 'Responsive, well-structured websites built with HTML, CSS and JavaScript.', link: 'See my projects', icon: <CodeIcon /> },
+    { to: 'projects', title: 'UI/UX Design', text: 'App and web interfaces prototyped in Figma with clear, easy-to-follow user flows.', link: 'See my projects', icon: <LayersIcon /> },
+    { to: 'skills', title: 'Digital Design', text: 'Graphics, presentations and multimedia content made with Canva and editing tools.', link: 'See my skills', icon: <PenIcon /> },
   ];
   return (
     <>
@@ -290,8 +266,8 @@ function HomePage() {
           <aside className="glance reveal" style={d(3)} aria-label="At a glance">
             <h2 className="glance-title">At a glance</h2>
             <dl>
-              <div><dt>Focus</dt><dd>Web Development, UI/UX Design, Programming</dd></div>
-              <div><dt>Latest role</dt><dd>{experience[0].role}, {experience[0].company}</dd></div>
+              <div><dt>Focus</dt><dd>Web Development, UI/UX Design, Digital Design</dd></div>
+              <div><dt>Languages</dt><dd>JavaScript, Java, Python, SQL</dd></div>
               <div><dt>Education</dt><dd>BS Information Technology, {education.school}</dd></div>
               <div><dt>Location</dt><dd>Rizal / Metro Manila</dd></div>
             </dl>
@@ -300,13 +276,17 @@ function HomePage() {
       </section>
       <section className="section">
         <div className="container">
+          <div className="home-head reveal" style={d(6)}>
+            <span className="kicker">What I do</span>
+            <h2>Where I can help</h2>
+          </div>
           <div className="highlight-grid">
             {highlights.map((h, i) => (
-              <a key={h.to} href={href(h.to)} className="card highlight reveal" style={d(6 + i)}>
+              <a key={h.title} href={href(h.to)} className="card highlight reveal" style={d(7 + i)}>
                 <span className="highlight-icon">{h.icon}</span>
                 <h2>{h.title}</h2>
                 <p>{h.text}</p>
-                <span className="highlight-more">View {h.title.toLowerCase()} <ArrowIcon /></span>
+                <span className="highlight-more">{h.link} <ArrowIcon /></span>
               </a>
             ))}
           </div>
@@ -324,13 +304,13 @@ function AboutPage() {
         <div className="container">
           <div className="about-grid">
             <p className="lead reveal" style={d(2)}>
-              I build clean, responsive websites and design user interfaces that are easy to use. My work spans front-end development
-              with HTML, CSS and JavaScript, UI/UX prototyping in Figma, and programming in Java and Python.
+              I build clean, responsive websites and design digital experiences that are easy to use. My work spans front-end development
+              with HTML, CSS and JavaScript, UI/UX prototyping in Figma, digital design in Canva, and programming in Java and Python.
             </p>
             <p className="reveal" style={d(3)}>
               I also work with SQL and XAMPP for databases and local web servers, and I write clear technical documentation. I value accuracy
-              and dependable follow-through, and I am looking for an entry-level IT role where I can contribute from day one
-              and keep growing with the team.
+              and dependable follow-through, and I am looking for a role in web development, UI/UX or digital design where I can
+              contribute and keep growing with the team.
             </p>
           </div>
 
@@ -355,36 +335,6 @@ function AboutPage() {
                 ))}
               </ul>
             </div>
-          </div>
-          <NextLink to="experience" label="Experience" />
-        </div>
-      </section>
-    </>
-  );
-}
-
-function ExperiencePage() {
-  return (
-    <>
-      <PageHead kicker="Experience" title="Work experience" intro="Internship experience in IT and system configuration." />
-      <section className="section">
-        <div className="container">
-          <div className="timeline">
-            {experience.map((job, i) => (
-              <article className="job reveal" style={d(3 + i)} key={job.company}>
-                <span className="job-dot" aria-hidden="true" />
-                <div className="job-head">
-                  <div>
-                    <h3>{job.role}</h3>
-                    <p className="job-company">{job.company} <span>· {job.place}</span></p>
-                  </div>
-                  <span className="job-period">{job.period}</span>
-                </div>
-                <ul>
-                  {job.points.map((p) => <li key={p}>{p}</li>)}
-                </ul>
-              </article>
-            ))}
           </div>
           <NextLink to="projects" label="Projects" />
         </div>
@@ -493,7 +443,6 @@ function App() {
       <main id="main" tabIndex={-1} key={page} className="page">
         {page === 'home' && <HomePage />}
         {page === 'about' && <AboutPage />}
-        {page === 'experience' && <ExperiencePage />}
         {page === 'projects' && <ProjectsPage />}
         {page === 'skills' && <SkillsPage />}
         {page === 'contact' && <ContactPage />}

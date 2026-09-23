@@ -321,6 +321,8 @@ button { font: inherit; }
 .glance dd { margin: 2px 0 0; font-weight: 600; color: var(--heading); font-size: 15px; }
 
 /* Home highlight cards */
+.home-head { margin-bottom: 28px; }
+.home-head h2 { font-family: var(--font-head); font-size: clamp(26px, 3.2vw, 32px); font-weight: 600; margin-top: 6px; }
 .highlight-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .highlight { display: flex; flex-direction: column; gap: 10px; }
 .highlight h2 { font-family: var(--font-head); font-size: 22px; font-weight: 600; }
